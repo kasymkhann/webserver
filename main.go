@@ -38,7 +38,7 @@ func mainPage(w http.ResponseWriter, r *http.Request) {
 }
 
 func usersPAge(w http.ResponseWriter, r *http.Request) {
-	users := []User{User{"Ali", 77}, {"User", 19}}
+	users := []User{{"Ali", 77}, User{"Human", 88}}
 
 	tmpl, err := template.ParseFiles("static/users.html")
 	if err != nil {
